@@ -1,0 +1,6 @@
+D:\stage\BotFactory\BotFactory\Fakes\Factories.fakes : warning : Impossible de générer le shim pour BotFactory.Factories.IFactoryQueueElement : le type est une interface.
+D:\stage\BotFactory\BotFactory\Fakes\Factories.fakes : warning : Impossible de générer le shim pour BotFactory.Factories.IUnitFactory : le type est une interface.
+D:\stage\BotFactory\BotFactory\Fakes\Factories.fakes : warning : Impossible de générer le shim pour BotFactory.Factories.ITestingUnit : le type est une interface.
+D:\stage\BotFactory\BotFactory\Fakes\Factories.fakes : warning : Impossible de générer le shim pour BotFactory.Factories.TestingUnit+<MoveAsync>d__40 : le type n'est pas pris en charge en raison de limitations internes.
+D:\stage\BotFactory\BotFactory\Fakes\Factories.fakes : warning : Impossible de générer le shim pour BotFactory.Factories.TestingUnit+<WorkBegins>d__38 : le type n'est pas pris en charge en raison de limitations internes.
+D:\stage\BotFactory\BotFactory\Fakes\Factories.fakes : warning : Impossible de générer le shim pour BotFactory.Factories.TestingUnit+<WorkEnds>d__39 : le type n'est pas pris en charge en raison de limitations internes.

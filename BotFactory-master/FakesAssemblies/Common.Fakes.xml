@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Common.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:BotFactory.Common.Interface.Fakes.StubIBaseUnit">
+            <summary>Type stub de BotFactory.Common.Interface.IBaseUnit</summary>
+        </member>
+        <member name="M:BotFactory.Common.Interface.Fakes.StubIBaseUnit.#ctor">
+            <summary>Initialise une nouvelle instance de type StubIBaseUnit</summary>
+        </member>
+        <member name="M:BotFactory.Common.Interface.Fakes.StubIBaseUnit.AttachBackingFieldToCurrentPos">
+            <summary>Attache les délégués pour émuler StubIBaseUnit.CurrentPos en tant que propriété avec un champ de stockage.</summary>
+        </member>
+        <member name="M:BotFactory.Common.Interface.Fakes.StubIBaseUnit.AttachBackingFieldToName">
+            <summary>Attache les délégués pour émuler StubIBaseUnit.Name en tant que propriété avec un champ de stockage.</summary>
+        </member>
+        <member name="M:BotFactory.Common.Interface.Fakes.StubIBaseUnit.AttachBackingFieldToSpeed">
+            <summary>Attache les délégués pour émuler StubIBaseUnit.Speed en tant que propriété avec un champ de stockage.</summary>
+        </member>
+        <member name="M:BotFactory.Common.Interface.Fakes.StubIBaseUnit.BotFactory#Common#Interface#IBaseUnit#MoveAsync(BotFactory.Common.Tools.Coordinates,BotFactory.Common.Tools.Coordinates)">
+            <summary>Définit le stub de IBaseUnit.MoveAsync(Coordinates currentPos, Coordinates targetPos)</summary>
+        </member>
+        <member name="P:BotFactory.Common.Interface.Fakes.StubIBaseUnit.BotFactory#Common#Interface#IBaseUnit#CurrentPos">
+            <summary>Définit le stub de IBaseUnit.get_CurrentPos()</summary>
+        </member>
+        <member name="F:BotFactory.Common.Interface.Fakes.StubIBaseUnit.CurrentPosGet">
+            <summary>Définit le stub de IBaseUnit.get_CurrentPos()</summary>
+        </member>
+        <member name="F:BotFactory.Common.Interface.Fakes.StubIBaseUnit.CurrentPosSetCoordinates">
+            <summary>Définit le stub de IBaseUnit.set_CurrentPos(Coordinates value)</summary>
+        </member>
+        <member name="F:BotFactory.Common.Interface.Fakes.StubIBaseUnit.MoveAsyncCoordinatesCoordinates">
+            <summary>Définit le stub de IBaseUnit.MoveAsync(Coordinates currentPos, Coordinates targetPos)</summary>
+        </member>
+        <member name="P:BotFactory.Common.Interface.Fakes.StubIBaseUnit.BotFactory#Common#Interface#IBaseUnit#Name">
+            <summary>Définit le stub de IBaseUnit.get_Name()</summary>
+        </member>
+        <member name="F:BotFactory.Common.Interface.Fakes.StubIBaseUnit.NameGet">
+            <summary>Définit le stub de IBaseUnit.get_Name()</summary>
+        </member>
+        <member name="F:BotFactory.Common.Interface.Fakes.StubIBaseUnit.NameSetString">
+            <summary>Définit le stub de IBaseUnit.set_Name(String value)</summary>
+        </member>
+        <member name="P:BotFactory.Common.Interface.Fakes.StubIBaseUnit.BotFactory#Common#Interface#IBaseUnit#Speed">
+            <summary>Définit le stub de IBaseUnit.get_Speed()</summary>
+        </member>
+        <member name="F:BotFactory.Common.Interface.Fakes.StubIBaseUnit.SpeedGet">
+            <summary>Définit le stub de IBaseUnit.get_Speed()</summary>
+        </member>
+        <member name="F:BotFactory.Common.Interface.Fakes.StubIBaseUnit.SpeedSetDouble">
+            <summary>Définit le stub de IBaseUnit.set_Speed(Double value)</summary>
+        </member>
+        <member name="T:BotFactory.Common.Interface.Fakes.StubIBuildableUnit">
+            <summary>Type stub de BotFactory.Common.Interface.IBuildableUnit</summary>
+        </member>
+        <member name="M:BotFactory.Common.Interface.Fakes.StubIBuildableUnit.#ctor">
+            <summary>Initialise une nouvelle instance de type StubIBuildableUnit</summary>
+        </member>
+        <member name="M:BotFactory.Common.Interface.Fakes.StubIBuildableUnit.AttachBackingFieldToBuildTime">
+            <summary>Attache les délégués pour émuler StubIBuildableUnit.BuildTime en tant que propriété avec un champ de stockage.</summary>
+        </member>
+        <member name="P:BotFactory.Common.Interface.Fakes.StubIBuildableUnit.BotFactory#Common#Interface#IBuildableUnit#BuildTime">
+            <summary>Définit le stub de IBuildableUnit.get_BuildTime()</summary>
+        </member>
+        <member name="F:BotFactory.Common.Interface.Fakes.StubIBuildableUnit.BuildTimeGet">
+            <summary>Définit le stub de IBuildableUnit.get_BuildTime()</summary>
+        </member>
+        <member name="F:BotFactory.Common.Interface.Fakes.StubIBuildableUnit.BuildTimeSetDouble">
+            <summary>Définit le stub de IBuildableUnit.set_BuildTime(Double value)</summary>
+        </member>
+        <member name="T:BotFactory.Common.Interface.Fakes.StubIReportingUnit">
+            <summary>Type stub de BotFactory.Common.Interface.IReportingUnit</summary>
+        </member>
+        <member name="M:BotFactory.Common.Interface.Fakes.StubIReportingUnit.#ctor">
+            <summary>Initialise une nouvelle instance de type StubIReportingUnit</summary>
+        </member>
+        <member name="M:BotFactory.Common.Interface.Fakes.StubIReportingUnit.BotFactory#Common#Interface#IReportingUnit#OnStatusChanged(BotFactory.Common.Interface.IStatusChangedEventArgs)">
+            <summary>Définit le stub de IReportingUnit.OnStatusChanged(IStatusChangedEventArgs e)</summary>
+        </member>
+        <member name="F:BotFactory.Common.Interface.Fakes.StubIReportingUnit.OnStatusChangedIStatusChangedEventArgs">
+            <summary>Définit le stub de IReportingUnit.OnStatusChanged(IStatusChangedEventArgs e)</summary>
+        </member>
+        <member name="T:BotFactory.Common.Interface.Fakes.StubIStatusChangedEventArgs">
+            <summary>Type stub de BotFactory.Common.Interface.IStatusChangedEventArgs</summary>
+        </member>
+        <member name="M:BotFactory.Common.Interface.Fakes.StubIStatusChangedEventArgs.#ctor">
+            <summary>Initialise une nouvelle instance de type StubIStatusChangedEventArgs</summary>
+        </member>
+        <member name="M:BotFactory.Common.Interface.Fakes.StubIStatusChangedEventArgs.AttachBackingFieldToNewStatus">
+            <summary>Attache les délégués pour émuler StubIStatusChangedEventArgs.NewStatus en tant que propriété avec un champ de stockage.</summary>
+        </member>
+        <member name="P:BotFactory.Common.Interface.Fakes.StubIStatusChangedEventArgs.BotFactory#Common#Interface#IStatusChangedEventArgs#NewStatus">
+            <summary>Définit le stub de IStatusChangedEventArgs.get_NewStatus()</summary>
+        </member>
+        <member name="F:BotFactory.Common.Interface.Fakes.StubIStatusChangedEventArgs.NewStatusGet">
+            <summary>Définit le stub de IStatusChangedEventArgs.get_NewStatus()</summary>
+        </member>
+        <member name="F:BotFactory.Common.Interface.Fakes.StubIStatusChangedEventArgs.NewStatusSetString">
+            <summary>Définit le stub de IStatusChangedEventArgs.set_NewStatus(String value)</summary>
+        </member>
+        <member name="T:BotFactory.Common.Interface.Fakes.StubIWorkingUnit">
+            <summary>Type stub de BotFactory.Common.Interface.IWorkingUnit</summary>
+        </member>
+        <member name="M:BotFactory.Common.Interface.Fakes.StubIWorkingUnit.#ctor">
+            <summary>Initialise une nouvelle instance de type StubIWorkingUnit</summary>
+        </member>
+        <member name="M:BotFactory.Common.Interface.Fakes.StubIWorkingUnit.AttachBackingFieldToIsWorking">
+            <summary>Attache les délégués pour émuler StubIWorkingUnit.IsWorking en tant que propriété avec un champ de stockage.</summary>
+        </member>
+        <member name="M:BotFactory.Common.Interface.Fakes.StubIWorkingUnit.AttachBackingFieldToParkingPos">
+            <summary>Attache les délégués pour émuler StubIWorkingUnit.ParkingPos en tant que propriété avec un champ de stockage.</summary>
+        </member>
+        <member name="M:BotFactory.Common.Interface.Fakes.StubIWorkingUnit.AttachBackingFieldToWorkingPos">
+            <summary>Attache les délégués pour émuler StubIWorkingUnit.WorkingPos en tant que propriété avec un champ de stockage.</summary>
+        </member>
+        <member name="M:BotFactory.Common.Interface.Fakes.StubIWorkingUnit.BotFactory#Common#Interface#IWorkingUnit#WorkBegins">
+            <summary>Définit le stub de IWorkingUnit.WorkBegins()</summary>
+        </member>
+        <member name="P:BotFactory.Common.Interface.Fakes.StubIWorkingUnit.BotFactory#Common#Interface#IWorkingUnit#IsWorking">
+            <summary>Définit le stub de IWorkingUnit.get_IsWorking()</summary>
+        </member>
+        <member name="F:BotFactory.Common.Interface.Fakes.StubIWorkingUnit.IsWorkingGet">
+            <summary>Définit le stub de IWorkingUnit.get_IsWorking()</summary>
+        </member>
+        <member name="F:BotFactory.Common.Interface.Fakes.StubIWorkingUnit.IsWorkingSetBoolean">
+            <summary>Définit le stub de IWorkingUnit.set_IsWorking(Boolean value)</summary>
+        </member>
+        <member name="P:BotFactory.Common.Interface.Fakes.StubIWorkingUnit.BotFactory#Common#Interface#IWorkingUnit#ParkingPos">
+            <summary>Définit le stub de IWorkingUnit.get_ParkingPos()</summary>
+        </member>
+        <member name="F:BotFactory.Common.Interface.Fakes.StubIWorkingUnit.ParkingPosGet">
+            <summary>Définit le stub de IWorkingUnit.get_ParkingPos()</summary>
+        </member>
+        <member name="F:BotFactory.Common.Interface.Fakes.StubIWorkingUnit.ParkingPosSetCoordinates">
+            <summary>Définit le stub de IWorkingUnit.set_ParkingPos(Coordinates value)</summary>
+        </member>
+        <member name="F:BotFactory.Common.Interface.Fakes.StubIWorkingUnit.WorkBegins">
+            <summary>Définit le stub de IWorkingUnit.WorkBegins()</summary>
+        </member>
+        <member name="P:BotFactory.Common.Interface.Fakes.StubIWorkingUnit.BotFactory#Common#Interface#IWorkingUnit#WorkingPos">
+            <summary>Définit le stub de IWorkingUnit.get_WorkingPos()</summary>
+        </member>
+        <member name="F:BotFactory.Common.Interface.Fakes.StubIWorkingUnit.WorkingPosGet">
+            <summary>Définit le stub de IWorkingUnit.get_WorkingPos()</summary>
+        </member>
+        <member name="F:BotFactory.Common.Interface.Fakes.StubIWorkingUnit.WorkingPosSetCoordinates">
+            <summary>Définit le stub de IWorkingUnit.set_WorkingPos(Coordinates value)</summary>
+        </member>
+        <member name="T:BotFactory.Common.Tools.Fakes.ShimCoordinates">
+            <summary>Type shim de BotFactory.Common.Tools.Coordinates</summary>
+        </member>
+        <member name="M:BotFactory.Common.Tools.Fakes.ShimCoordinates.#ctor">
+            <summary>Initialise une nouvelle instance de shim</summary>
+        </member>
+        <member name="M:BotFactory.Common.Tools.Fakes.ShimCoordinates.#ctor(BotFactory.Common.Tools.Coordinates)">
+            <summary>Initialise un nouveau shim pour l&apos;instance donnée</summary>
+        </member>
+        <member name="T:BotFactory.Common.Tools.Fakes.ShimCoordinates.AllInstances">
+            <summary>Définir des shims pour tous les membres des instances</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.ShimCoordinates.AllInstances.EqualsCoordinatesCoordinates">
+            <summary>Définit le shim de Coordinates.Equals(Coordinates coord1, Coordinates coord2)</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.ShimCoordinates.AllInstances.XGet">
+            <summary>Définit le shim de Coordinates.get_X()</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.ShimCoordinates.AllInstances.XSetDouble">
+            <summary>Définit le shim de Coordinates.set_X(Double value)</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.ShimCoordinates.AllInstances.YGet">
+            <summary>Définit le shim de Coordinates.get_Y()</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.ShimCoordinates.AllInstances.YSetDouble">
+            <summary>Définit le shim de Coordinates.set_Y(Double value)</summary>
+        </member>
+        <member name="M:BotFactory.Common.Tools.Fakes.ShimCoordinates.BehaveAsCurrent">
+            <summary>Attribue le comportement &apos;Current&apos; à toutes les méthodes du type ayant fait l&apos;objet d&apos;un shim</summary>
+        </member>
+        <member name="M:BotFactory.Common.Tools.Fakes.ShimCoordinates.BehaveAsNotImplemented">
+            <summary>Attribue le comportement &apos;NotImplemented&apos; à toutes les méthodes du type ayant fait l&apos;objet d&apos;un shim</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.ShimCoordinates.Behavior">
+            <summary>Attribue le comportement à toutes les méthodes du type ayant fait l&apos;objet d&apos;un shim</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.ShimCoordinates.Constructor">
+            <summary>Définit le shim de Coordinates.Coordinates()</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.ShimCoordinates.ConstructorDoubleDouble">
+            <summary>Définit le shim de Coordinates.Coordinates(Double x, Double y)</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.ShimCoordinates.EqualsCoordinatesCoordinates">
+            <summary>Définit le shim de Coordinates.Equals(Coordinates coord1, Coordinates coord2)</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.ShimCoordinates.XGet">
+            <summary>Définit le shim de Coordinates.get_X()</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.ShimCoordinates.XSetDouble">
+            <summary>Définit le shim de Coordinates.set_X(Double value)</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.ShimCoordinates.YGet">
+            <summary>Définit le shim de Coordinates.get_Y()</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.ShimCoordinates.YSetDouble">
+            <summary>Définit le shim de Coordinates.set_Y(Double value)</summary>
+        </member>
+        <member name="T:BotFactory.Common.Tools.Fakes.ShimVector">
+            <summary>Type shim de BotFactory.Common.Tools.Vector</summary>
+        </member>
+        <member name="M:BotFactory.Common.Tools.Fakes.ShimVector.#ctor">
+            <summary>Initialise une nouvelle instance de shim</summary>
+        </member>
+        <member name="M:BotFactory.Common.Tools.Fakes.ShimVector.#ctor(BotFactory.Common.Tools.Vector)">
+            <summary>Initialise un nouveau shim pour l&apos;instance donnée</summary>
+        </member>
+        <member name="T:BotFactory.Common.Tools.Fakes.ShimVector.AllInstances">
+            <summary>Définir des shims pour tous les membres des instances</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.ShimVector.AllInstances.XGet">
+            <summary>Définit le shim de Vector.get_X()</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.ShimVector.AllInstances.XSetDouble">
+            <summary>Définit le shim de Vector.set_X(Double value)</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.ShimVector.AllInstances.YGet">
+            <summary>Définit le shim de Vector.get_Y()</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.ShimVector.AllInstances.YSetDouble">
+            <summary>Définit le shim de Vector.set_Y(Double value)</summary>
+        </member>
+        <member name="M:BotFactory.Common.Tools.Fakes.ShimVector.BehaveAsCurrent">
+            <summary>Attribue le comportement &apos;Current&apos; à toutes les méthodes du type ayant fait l&apos;objet d&apos;un shim</summary>
+        </member>
+        <member name="M:BotFactory.Common.Tools.Fakes.ShimVector.BehaveAsNotImplemented">
+            <summary>Attribue le comportement &apos;NotImplemented&apos; à toutes les méthodes du type ayant fait l&apos;objet d&apos;un shim</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.ShimVector.Behavior">
+            <summary>Attribue le comportement à toutes les méthodes du type ayant fait l&apos;objet d&apos;un shim</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.ShimVector.Constructor">
+            <summary>Définit le shim de Vector.Vector()</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.ShimVector.FromCoordinatesCoordinatesCoordinates">
+            <summary>Définit le shim de Vector.FromCoordinates(Coordinates begin, Coordinates end)</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.ShimVector.LengthVector">
+            <summary>Définit le shim de Vector.Length(Vector v)</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.ShimVector.XGet">
+            <summary>Définit le shim de Vector.get_X()</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.ShimVector.XSetDouble">
+            <summary>Définit le shim de Vector.set_X(Double value)</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.ShimVector.YGet">
+            <summary>Définit le shim de Vector.get_Y()</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.ShimVector.YSetDouble">
+            <summary>Définit le shim de Vector.set_Y(Double value)</summary>
+        </member>
+        <member name="T:BotFactory.Common.Tools.Fakes.StubCoordinates">
+            <summary>Type stub de BotFactory.Common.Tools.Coordinates</summary>
+        </member>
+        <member name="M:BotFactory.Common.Tools.Fakes.StubCoordinates.#ctor">
+            <summary>Initialise une nouvelle instance</summary>
+        </member>
+        <member name="M:BotFactory.Common.Tools.Fakes.StubCoordinates.#ctor(System.Double,System.Double)">
+            <summary>Initialise une nouvelle instance</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.StubCoordinates.CallBase">
+            <summary>Obtient ou définit une valeur qui indique si la méthode de base doit être appelée à la place du comportement de secours</summary>
+        </member>
+        <member name="M:BotFactory.Common.Tools.Fakes.StubCoordinates.InitializeStub">
+            <summary>Initialise une nouvelle instance de type StubCoordinates</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.StubCoordinates.InstanceBehavior">
+            <summary>Obtient ou définit le comportement de l&apos;instance.</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.StubCoordinates.InstanceObserver">
+            <summary>Obtient ou définit l&apos;observateur d&apos;instance.</summary>
+        </member>
+        <member name="T:BotFactory.Common.Tools.Fakes.StubVector">
+            <summary>Type stub de BotFactory.Common.Tools.Vector</summary>
+        </member>
+        <member name="M:BotFactory.Common.Tools.Fakes.StubVector.#ctor">
+            <summary>Initialise une nouvelle instance</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.StubVector.CallBase">
+            <summary>Obtient ou définit une valeur qui indique si la méthode de base doit être appelée à la place du comportement de secours</summary>
+        </member>
+        <member name="M:BotFactory.Common.Tools.Fakes.StubVector.InitializeStub">
+            <summary>Initialise une nouvelle instance de type StubVector</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.StubVector.InstanceBehavior">
+            <summary>Obtient ou définit le comportement de l&apos;instance.</summary>
+        </member>
+        <member name="P:BotFactory.Common.Tools.Fakes.StubVector.InstanceObserver">
+            <summary>Obtient ou définit l&apos;observateur d&apos;instance.</summary>
+        </member>
+    </members>
+</doc>

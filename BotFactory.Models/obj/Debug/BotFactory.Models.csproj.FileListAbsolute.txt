@@ -1,0 +1,14 @@
+C:\Projets\LHA\BotFactory\Models\bin\Debug\BotFactory.Models.dll
+C:\Projets\LHA\BotFactory\Models\bin\Debug\BotFactory.Models.pdb
+C:\Projets\LHA\BotFactory\Models\bin\Debug\BotFactory.Common.dll
+C:\Projets\LHA\BotFactory\Models\bin\Debug\BotFactory.Common.pdb
+C:\Projets\LHA\BotFactory\Models\obj\Debug\BotFactory.Models.csprojResolveAssemblyReference.cache
+C:\Projets\LHA\BotFactory\Models\obj\Debug\BotFactory.Models.dll
+C:\Projets\LHA\BotFactory\Models\obj\Debug\BotFactory.Models.pdb
+C:\Projets\LHA\BotFactory\BotFactory.Models\bin\Debug\BotFactory.Models.dll
+C:\Projets\LHA\BotFactory\BotFactory.Models\bin\Debug\BotFactory.Models.pdb
+C:\Projets\LHA\BotFactory\BotFactory.Models\bin\Debug\BotFactory.Common.dll
+C:\Projets\LHA\BotFactory\BotFactory.Models\bin\Debug\BotFactory.Common.pdb
+C:\Projets\LHA\BotFactory\BotFactory.Models\obj\Debug\BotFactory.Models.csprojResolveAssemblyReference.cache
+C:\Projets\LHA\BotFactory\BotFactory.Models\obj\Debug\BotFactory.Models.dll
+C:\Projets\LHA\BotFactory\BotFactory.Models\obj\Debug\BotFactory.Models.pdb

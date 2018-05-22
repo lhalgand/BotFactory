@@ -1,0 +1,833 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Factories.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:BotFactory.Factories.Fakes.ShimFactoryQueueElement">
+            <summary>Type shim de BotFactory.Factories.FactoryQueueElement</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.ShimFactoryQueueElement.#ctor">
+            <summary>Initialise une nouvelle instance de shim</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.ShimFactoryQueueElement.#ctor(BotFactory.Factories.FactoryQueueElement)">
+            <summary>Initialise un nouveau shim pour l&apos;instance donnée</summary>
+        </member>
+        <member name="T:BotFactory.Factories.Fakes.ShimFactoryQueueElement.AllInstances">
+            <summary>Définir des shims pour tous les membres des instances</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimFactoryQueueElement.AllInstances.BuildTimeGet">
+            <summary>Définit le shim de FactoryQueueElement.get_BuildTime()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimFactoryQueueElement.AllInstances.BuildTimeSetDouble">
+            <summary>Définit le shim de FactoryQueueElement.set_BuildTime(Double value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimFactoryQueueElement.AllInstances.ModelGet">
+            <summary>Définit le shim de FactoryQueueElement.get_Model()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimFactoryQueueElement.AllInstances.ModelSetType">
+            <summary>Définit le shim de FactoryQueueElement.set_Model(Type value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimFactoryQueueElement.AllInstances.NameGet">
+            <summary>Définit le shim de FactoryQueueElement.get_Name()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimFactoryQueueElement.AllInstances.NameSetString">
+            <summary>Définit le shim de FactoryQueueElement.set_Name(String value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimFactoryQueueElement.AllInstances.ParkingPosGet">
+            <summary>Définit le shim de FactoryQueueElement.get_ParkingPos()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimFactoryQueueElement.AllInstances.ParkingPosSetCoordinates">
+            <summary>Définit le shim de FactoryQueueElement.set_ParkingPos(Coordinates value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimFactoryQueueElement.AllInstances.WorkingPosGet">
+            <summary>Définit le shim de FactoryQueueElement.get_WorkingPos()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimFactoryQueueElement.AllInstances.WorkingPosSetCoordinates">
+            <summary>Définit le shim de FactoryQueueElement.set_WorkingPos(Coordinates value)</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.ShimFactoryQueueElement.BehaveAsCurrent">
+            <summary>Attribue le comportement &apos;Current&apos; à toutes les méthodes du type ayant fait l&apos;objet d&apos;un shim</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.ShimFactoryQueueElement.BehaveAsNotImplemented">
+            <summary>Attribue le comportement &apos;NotImplemented&apos; à toutes les méthodes du type ayant fait l&apos;objet d&apos;un shim</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimFactoryQueueElement.Behavior">
+            <summary>Attribue le comportement à toutes les méthodes du type ayant fait l&apos;objet d&apos;un shim</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.ShimFactoryQueueElement.Bind(BotFactory.Factories.IFactoryQueueElement)">
+            <summary>Relie les membres de l&apos;interface au shim.</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimFactoryQueueElement.BuildTimeGet">
+            <summary>Définit le shim de FactoryQueueElement.get_BuildTime()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimFactoryQueueElement.BuildTimeSetDouble">
+            <summary>Définit le shim de FactoryQueueElement.set_BuildTime(Double value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimFactoryQueueElement.Constructor">
+            <summary>Définit le shim de FactoryQueueElement.FactoryQueueElement()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimFactoryQueueElement.ModelGet">
+            <summary>Définit le shim de FactoryQueueElement.get_Model()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimFactoryQueueElement.ModelSetType">
+            <summary>Définit le shim de FactoryQueueElement.set_Model(Type value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimFactoryQueueElement.NameGet">
+            <summary>Définit le shim de FactoryQueueElement.get_Name()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimFactoryQueueElement.NameSetString">
+            <summary>Définit le shim de FactoryQueueElement.set_Name(String value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimFactoryQueueElement.ParkingPosGet">
+            <summary>Définit le shim de FactoryQueueElement.get_ParkingPos()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimFactoryQueueElement.ParkingPosSetCoordinates">
+            <summary>Définit le shim de FactoryQueueElement.set_ParkingPos(Coordinates value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimFactoryQueueElement.WorkingPosGet">
+            <summary>Définit le shim de FactoryQueueElement.get_WorkingPos()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimFactoryQueueElement.WorkingPosSetCoordinates">
+            <summary>Définit le shim de FactoryQueueElement.set_WorkingPos(Coordinates value)</summary>
+        </member>
+        <member name="T:BotFactory.Factories.Fakes.ShimReportingFactory">
+            <summary>Type shim de BotFactory.Factories.ReportingFactory</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.ShimReportingFactory.#ctor(BotFactory.Factories.ReportingFactory)">
+            <summary>Initialise un nouveau shim pour l&apos;instance donnée</summary>
+        </member>
+        <member name="T:BotFactory.Factories.Fakes.ShimReportingFactory.AllInstances">
+            <summary>Définir des shims pour tous les membres des instances</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimReportingFactory.AllInstances.FactoryStatusAddEventHandler">
+            <summary>Définit le shim de ReportingFactory.add_FactoryStatus(EventHandler value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimReportingFactory.AllInstances.FactoryStatusRemoveEventHandler">
+            <summary>Définit le shim de ReportingFactory.remove_FactoryStatus(EventHandler value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimReportingFactory.AllInstances.OnStatusChangedIStatusChangedEventArgs">
+            <summary>Définit le shim de ReportingFactory.OnStatusChanged(IStatusChangedEventArgs e)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimReportingFactory.AllInstances.OnStatusChangedStatusChangedEventArgs">
+            <summary>Définit le shim de ReportingFactory.OnStatusChanged(StatusChangedEventArgs e)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimReportingFactory.AllInstances.UnitStatusChangedAddEventHandler">
+            <summary>Définit le shim de ReportingFactory.add_UnitStatusChanged(EventHandler value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimReportingFactory.AllInstances.UnitStatusChangedRemoveEventHandler">
+            <summary>Définit le shim de ReportingFactory.remove_UnitStatusChanged(EventHandler value)</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.ShimReportingFactory.BehaveAsCurrent">
+            <summary>Attribue le comportement &apos;Current&apos; à toutes les méthodes du type ayant fait l&apos;objet d&apos;un shim</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.ShimReportingFactory.BehaveAsNotImplemented">
+            <summary>Attribue le comportement &apos;NotImplemented&apos; à toutes les méthodes du type ayant fait l&apos;objet d&apos;un shim</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimReportingFactory.Behavior">
+            <summary>Attribue le comportement à toutes les méthodes du type ayant fait l&apos;objet d&apos;un shim</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.ShimReportingFactory.Bind(BotFactory.Common.Interface.IReportingUnit)">
+            <summary>Relie les membres de l&apos;interface au shim.</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimReportingFactory.Constructor">
+            <summary>Définit le shim de ReportingFactory.ReportingFactory()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimReportingFactory.FactoryStatusAddEventHandler">
+            <summary>Définit le shim de ReportingFactory.add_FactoryStatus(EventHandler value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimReportingFactory.FactoryStatusRemoveEventHandler">
+            <summary>Définit le shim de ReportingFactory.remove_FactoryStatus(EventHandler value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimReportingFactory.OnStatusChangedIStatusChangedEventArgs">
+            <summary>Définit le shim de ReportingFactory.OnStatusChanged(IStatusChangedEventArgs e)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimReportingFactory.OnStatusChangedStatusChangedEventArgs">
+            <summary>Définit le shim de ReportingFactory.OnStatusChanged(StatusChangedEventArgs e)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimReportingFactory.UnitStatusChangedAddEventHandler">
+            <summary>Définit le shim de ReportingFactory.add_UnitStatusChanged(EventHandler value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimReportingFactory.UnitStatusChangedRemoveEventHandler">
+            <summary>Définit le shim de ReportingFactory.remove_UnitStatusChanged(EventHandler value)</summary>
+        </member>
+        <member name="T:BotFactory.Factories.Fakes.ShimStatusChangedEventArgs">
+            <summary>Type shim de BotFactory.Factories.StatusChangedEventArgs</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.ShimStatusChangedEventArgs.#ctor">
+            <summary>Initialise une nouvelle instance de shim</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.ShimStatusChangedEventArgs.#ctor(BotFactory.Factories.StatusChangedEventArgs)">
+            <summary>Initialise un nouveau shim pour l&apos;instance donnée</summary>
+        </member>
+        <member name="T:BotFactory.Factories.Fakes.ShimStatusChangedEventArgs.AllInstances">
+            <summary>Définir des shims pour tous les membres des instances</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimStatusChangedEventArgs.AllInstances.NewStatusGet">
+            <summary>Définit le shim de StatusChangedEventArgs.get_NewStatus()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimStatusChangedEventArgs.AllInstances.NewStatusSetString">
+            <summary>Définit le shim de StatusChangedEventArgs.set_NewStatus(String value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimStatusChangedEventArgs.AllInstances.QueueElementGet">
+            <summary>Définit le shim de StatusChangedEventArgs.get_QueueElement()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimStatusChangedEventArgs.AllInstances.QueueElementSetIFactoryQueueElement">
+            <summary>Définit le shim de StatusChangedEventArgs.set_QueueElement(IFactoryQueueElement value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimStatusChangedEventArgs.AllInstances.TestingUnitGet">
+            <summary>Définit le shim de StatusChangedEventArgs.get_TestingUnit()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimStatusChangedEventArgs.AllInstances.TestingUnitSetITestingUnit">
+            <summary>Définit le shim de StatusChangedEventArgs.set_TestingUnit(ITestingUnit value)</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.ShimStatusChangedEventArgs.BehaveAsCurrent">
+            <summary>Attribue le comportement &apos;Current&apos; à toutes les méthodes du type ayant fait l&apos;objet d&apos;un shim</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.ShimStatusChangedEventArgs.BehaveAsNotImplemented">
+            <summary>Attribue le comportement &apos;NotImplemented&apos; à toutes les méthodes du type ayant fait l&apos;objet d&apos;un shim</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimStatusChangedEventArgs.Behavior">
+            <summary>Attribue le comportement à toutes les méthodes du type ayant fait l&apos;objet d&apos;un shim</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.ShimStatusChangedEventArgs.Bind(BotFactory.Common.Interface.IStatusChangedEventArgs)">
+            <summary>Relie les membres de l&apos;interface au shim.</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimStatusChangedEventArgs.Constructor">
+            <summary>Définit le shim de StatusChangedEventArgs.StatusChangedEventArgs()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimStatusChangedEventArgs.NewStatusGet">
+            <summary>Définit le shim de StatusChangedEventArgs.get_NewStatus()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimStatusChangedEventArgs.NewStatusSetString">
+            <summary>Définit le shim de StatusChangedEventArgs.set_NewStatus(String value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimStatusChangedEventArgs.QueueElementGet">
+            <summary>Définit le shim de StatusChangedEventArgs.get_QueueElement()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimStatusChangedEventArgs.QueueElementSetIFactoryQueueElement">
+            <summary>Définit le shim de StatusChangedEventArgs.set_QueueElement(IFactoryQueueElement value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimStatusChangedEventArgs.TestingUnitGet">
+            <summary>Définit le shim de StatusChangedEventArgs.get_TestingUnit()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimStatusChangedEventArgs.TestingUnitSetITestingUnit">
+            <summary>Définit le shim de StatusChangedEventArgs.set_TestingUnit(ITestingUnit value)</summary>
+        </member>
+        <member name="T:BotFactory.Factories.Fakes.ShimTestingUnit">
+            <summary>Type shim de BotFactory.Factories.TestingUnit</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.ShimTestingUnit.#ctor">
+            <summary>Initialise une nouvelle instance de shim</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.ShimTestingUnit.#ctor(BotFactory.Factories.TestingUnit)">
+            <summary>Initialise un nouveau shim pour l&apos;instance donnée</summary>
+        </member>
+        <member name="T:BotFactory.Factories.Fakes.ShimTestingUnit.AllInstances">
+            <summary>Définir des shims pour tous les membres des instances</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.AllInstances.BuildTimeGet">
+            <summary>Définit le shim de TestingUnit.get_BuildTime()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.AllInstances.BuildTimeSetDouble">
+            <summary>Définit le shim de TestingUnit.set_BuildTime(Double value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.AllInstances.CurrentPosGet">
+            <summary>Définit le shim de TestingUnit.get_CurrentPos()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.AllInstances.CurrentPosSetCoordinates">
+            <summary>Définit le shim de TestingUnit.set_CurrentPos(Coordinates value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.AllInstances.IsWorkingGet">
+            <summary>Définit le shim de TestingUnit.get_IsWorking()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.AllInstances.IsWorkingSetBoolean">
+            <summary>Définit le shim de TestingUnit.set_IsWorking(Boolean value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.AllInstances.ModelGet">
+            <summary>Définit le shim de TestingUnit.get_Model()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.AllInstances.MoveAsyncCoordinatesCoordinates">
+            <summary>Définit le shim de TestingUnit.MoveAsync(Coordinates begin, Coordinates end)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.AllInstances.MoveSimulation">
+            <summary>Définit le shim de TestingUnit.MoveSimulation()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.AllInstances.NameGet">
+            <summary>Définit le shim de TestingUnit.get_Name()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.AllInstances.NameSetString">
+            <summary>Définit le shim de TestingUnit.set_Name(String value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.AllInstances.NewStatusGet">
+            <summary>Définit le shim de TestingUnit.get_NewStatus()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.AllInstances.NewStatusSetString">
+            <summary>Définit le shim de TestingUnit.set_NewStatus(String value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.AllInstances.OnStatusChangedStatusChangedEventArgs">
+            <summary>Définit le shim de TestingUnit.OnStatusChanged(StatusChangedEventArgs e)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.AllInstances.ParkingPosGet">
+            <summary>Définit le shim de TestingUnit.get_ParkingPos()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.AllInstances.ParkingPosSetCoordinates">
+            <summary>Définit le shim de TestingUnit.set_ParkingPos(Coordinates value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.AllInstances.SpeedGet">
+            <summary>Définit le shim de TestingUnit.get_Speed()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.AllInstances.SpeedSetDouble">
+            <summary>Définit le shim de TestingUnit.set_Speed(Double value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.AllInstances.UnitStatusChangedAddEventHandler">
+            <summary>Définit le shim de TestingUnit.add_UnitStatusChanged(EventHandler value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.AllInstances.UnitStatusChangedRemoveEventHandler">
+            <summary>Définit le shim de TestingUnit.remove_UnitStatusChanged(EventHandler value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.AllInstances.WorkBegins">
+            <summary>Définit le shim de TestingUnit.WorkBegins()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.AllInstances.WorkEnds">
+            <summary>Définit le shim de TestingUnit.WorkEnds()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.AllInstances.WorkingPosGet">
+            <summary>Définit le shim de TestingUnit.get_WorkingPos()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.AllInstances.WorkingPosSetCoordinates">
+            <summary>Définit le shim de TestingUnit.set_WorkingPos(Coordinates value)</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.ShimTestingUnit.BehaveAsCurrent">
+            <summary>Attribue le comportement &apos;Current&apos; à toutes les méthodes du type ayant fait l&apos;objet d&apos;un shim</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.ShimTestingUnit.BehaveAsNotImplemented">
+            <summary>Attribue le comportement &apos;NotImplemented&apos; à toutes les méthodes du type ayant fait l&apos;objet d&apos;un shim</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.Behavior">
+            <summary>Attribue le comportement à toutes les méthodes du type ayant fait l&apos;objet d&apos;un shim</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.ShimTestingUnit.Bind(BotFactory.Factories.ITestingUnit)">
+            <summary>Relie les membres de l&apos;interface au shim.</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.BuildTimeGet">
+            <summary>Définit le shim de TestingUnit.get_BuildTime()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.BuildTimeSetDouble">
+            <summary>Définit le shim de TestingUnit.set_BuildTime(Double value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.Constructor">
+            <summary>Définit le shim de TestingUnit.TestingUnit()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.CurrentPosGet">
+            <summary>Définit le shim de TestingUnit.get_CurrentPos()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.CurrentPosSetCoordinates">
+            <summary>Définit le shim de TestingUnit.set_CurrentPos(Coordinates value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.IsWorkingGet">
+            <summary>Définit le shim de TestingUnit.get_IsWorking()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.IsWorkingSetBoolean">
+            <summary>Définit le shim de TestingUnit.set_IsWorking(Boolean value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.ModelGet">
+            <summary>Définit le shim de TestingUnit.get_Model()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.MoveAsyncCoordinatesCoordinates">
+            <summary>Définit le shim de TestingUnit.MoveAsync(Coordinates begin, Coordinates end)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.MoveSimulation">
+            <summary>Définit le shim de TestingUnit.MoveSimulation()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.NameGet">
+            <summary>Définit le shim de TestingUnit.get_Name()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.NameSetString">
+            <summary>Définit le shim de TestingUnit.set_Name(String value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.NewStatusGet">
+            <summary>Définit le shim de TestingUnit.get_NewStatus()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.NewStatusSetString">
+            <summary>Définit le shim de TestingUnit.set_NewStatus(String value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.OnStatusChangedStatusChangedEventArgs">
+            <summary>Définit le shim de TestingUnit.OnStatusChanged(StatusChangedEventArgs e)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.ParkingPosGet">
+            <summary>Définit le shim de TestingUnit.get_ParkingPos()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.ParkingPosSetCoordinates">
+            <summary>Définit le shim de TestingUnit.set_ParkingPos(Coordinates value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.SpeedGet">
+            <summary>Définit le shim de TestingUnit.get_Speed()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.SpeedSetDouble">
+            <summary>Définit le shim de TestingUnit.set_Speed(Double value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.UnitStatusChangedAddEventHandler">
+            <summary>Définit le shim de TestingUnit.add_UnitStatusChanged(EventHandler value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.UnitStatusChangedRemoveEventHandler">
+            <summary>Définit le shim de TestingUnit.remove_UnitStatusChanged(EventHandler value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.WorkBegins">
+            <summary>Définit le shim de TestingUnit.WorkBegins()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.WorkEnds">
+            <summary>Définit le shim de TestingUnit.WorkEnds()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.WorkingPosGet">
+            <summary>Définit le shim de TestingUnit.get_WorkingPos()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimTestingUnit.WorkingPosSetCoordinates">
+            <summary>Définit le shim de TestingUnit.set_WorkingPos(Coordinates value)</summary>
+        </member>
+        <member name="T:BotFactory.Factories.Fakes.ShimUnitFactory">
+            <summary>Type shim de BotFactory.Factories.UnitFactory</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.ShimUnitFactory.#ctor">
+            <summary>Initialise une nouvelle instance de shim</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.ShimUnitFactory.#ctor(BotFactory.Factories.UnitFactory)">
+            <summary>Initialise un nouveau shim pour l&apos;instance donnée</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimUnitFactory.AddWorkableUnitToQueueTypeStringCoordinatesCoordinates">
+            <summary>Définit le shim de UnitFactory.AddWorkableUnitToQueue(Type model, String name, Coordinates parkingPos, Coordinates workingPos)</summary>
+        </member>
+        <member name="T:BotFactory.Factories.Fakes.ShimUnitFactory.AllInstances">
+            <summary>Définir des shims pour tous les membres des instances</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimUnitFactory.AllInstances.AddWorkableUnitToQueueTypeStringCoordinatesCoordinates">
+            <summary>Définit le shim de UnitFactory.AddWorkableUnitToQueue(Type model, String name, Coordinates parkingPos, Coordinates workingPos)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimUnitFactory.AllInstances.Build">
+            <summary>Définit le shim de UnitFactory.Build()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimUnitFactory.AllInstances.FactoryStatusAddEventHandler">
+            <summary>Définit le shim de UnitFactory.add_FactoryStatus(EventHandler value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimUnitFactory.AllInstances.FactoryStatusRemoveEventHandler">
+            <summary>Définit le shim de UnitFactory.remove_FactoryStatus(EventHandler value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimUnitFactory.AllInstances.Go">
+            <summary>Définit le shim de UnitFactory.Go()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimUnitFactory.AllInstances.QueueCapacityGet">
+            <summary>Définit le shim de UnitFactory.get_QueueCapacity()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimUnitFactory.AllInstances.QueueFreeSlotsGet">
+            <summary>Définit le shim de UnitFactory.get_QueueFreeSlots()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimUnitFactory.AllInstances.QueueGet">
+            <summary>Définit le shim de UnitFactory.get_Queue()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimUnitFactory.AllInstances.QueueTimeGet">
+            <summary>Définit le shim de UnitFactory.get_QueueTime()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimUnitFactory.AllInstances.QueueTimeSetTimeSpan">
+            <summary>Définit le shim de UnitFactory.set_QueueTime(TimeSpan value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimUnitFactory.AllInstances.StorageCapacityGet">
+            <summary>Définit le shim de UnitFactory.get_StorageCapacity()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimUnitFactory.AllInstances.StorageFreeSlotsGet">
+            <summary>Définit le shim de UnitFactory.get_StorageFreeSlots()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimUnitFactory.AllInstances.StorageGet">
+            <summary>Définit le shim de UnitFactory.get_Storage()</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.ShimUnitFactory.BehaveAsCurrent">
+            <summary>Attribue le comportement &apos;Current&apos; à toutes les méthodes du type ayant fait l&apos;objet d&apos;un shim</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.ShimUnitFactory.BehaveAsNotImplemented">
+            <summary>Attribue le comportement &apos;NotImplemented&apos; à toutes les méthodes du type ayant fait l&apos;objet d&apos;un shim</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimUnitFactory.Behavior">
+            <summary>Attribue le comportement à toutes les méthodes du type ayant fait l&apos;objet d&apos;un shim</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.ShimUnitFactory.Bind(BotFactory.Common.Interface.IReportingUnit)">
+            <summary>Relie les membres de l&apos;interface au shim.</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.ShimUnitFactory.Bind(BotFactory.Factories.IUnitFactory)">
+            <summary>Relie les membres de l&apos;interface au shim.</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimUnitFactory.Build">
+            <summary>Définit le shim de UnitFactory.Build()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimUnitFactory.ConstructorInt32Int32">
+            <summary>Définit le shim de UnitFactory.UnitFactory(Int32 queueCapacity, Int32 storeCapacity)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimUnitFactory.FactoryStatusAddEventHandler">
+            <summary>Définit le shim de UnitFactory.add_FactoryStatus(EventHandler value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimUnitFactory.FactoryStatusRemoveEventHandler">
+            <summary>Définit le shim de UnitFactory.remove_FactoryStatus(EventHandler value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimUnitFactory.Go">
+            <summary>Définit le shim de UnitFactory.Go()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimUnitFactory.QueueCapacityGet">
+            <summary>Définit le shim de UnitFactory.get_QueueCapacity()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimUnitFactory.QueueFreeSlotsGet">
+            <summary>Définit le shim de UnitFactory.get_QueueFreeSlots()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimUnitFactory.QueueGet">
+            <summary>Définit le shim de UnitFactory.get_Queue()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimUnitFactory.QueueTimeGet">
+            <summary>Définit le shim de UnitFactory.get_QueueTime()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimUnitFactory.QueueTimeSetTimeSpan">
+            <summary>Définit le shim de UnitFactory.set_QueueTime(TimeSpan value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimUnitFactory.StorageCapacityGet">
+            <summary>Définit le shim de UnitFactory.get_StorageCapacity()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimUnitFactory.StorageFreeSlotsGet">
+            <summary>Définit le shim de UnitFactory.get_StorageFreeSlots()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.ShimUnitFactory.StorageGet">
+            <summary>Définit le shim de UnitFactory.get_Storage()</summary>
+        </member>
+        <member name="T:BotFactory.Factories.Fakes.StubFactoryQueueElement">
+            <summary>Type stub de BotFactory.Factories.FactoryQueueElement</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubFactoryQueueElement.#ctor">
+            <summary>Initialise une nouvelle instance</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubFactoryQueueElement.CallBase">
+            <summary>Obtient ou définit une valeur qui indique si la méthode de base doit être appelée à la place du comportement de secours</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubFactoryQueueElement.InitializeStub">
+            <summary>Initialise une nouvelle instance de type StubFactoryQueueElement</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubFactoryQueueElement.InstanceBehavior">
+            <summary>Obtient ou définit le comportement de l&apos;instance.</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubFactoryQueueElement.InstanceObserver">
+            <summary>Obtient ou définit l&apos;observateur d&apos;instance.</summary>
+        </member>
+        <member name="T:BotFactory.Factories.Fakes.StubIFactoryQueueElement">
+            <summary>Type stub de BotFactory.Factories.IFactoryQueueElement</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubIFactoryQueueElement.#ctor">
+            <summary>Initialise une nouvelle instance de type StubIFactoryQueueElement</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubIFactoryQueueElement.AttachBackingFieldToModel">
+            <summary>Attache les délégués pour émuler StubIFactoryQueueElement.Model en tant que propriété avec un champ de stockage.</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubIFactoryQueueElement.AttachBackingFieldToName">
+            <summary>Attache les délégués pour émuler StubIFactoryQueueElement.Name en tant que propriété avec un champ de stockage.</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubIFactoryQueueElement.AttachBackingFieldToParkingPos">
+            <summary>Attache les délégués pour émuler StubIFactoryQueueElement.ParkingPos en tant que propriété avec un champ de stockage.</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubIFactoryQueueElement.AttachBackingFieldToWorkingPos">
+            <summary>Attache les délégués pour émuler StubIFactoryQueueElement.WorkingPos en tant que propriété avec un champ de stockage.</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubIFactoryQueueElement.BotFactory#Factories#IFactoryQueueElement#Model">
+            <summary>Définit le stub de IFactoryQueueElement.get_Model()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubIFactoryQueueElement.ModelGet">
+            <summary>Définit le stub de IFactoryQueueElement.get_Model()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubIFactoryQueueElement.ModelSetType">
+            <summary>Définit le stub de IFactoryQueueElement.set_Model(Type value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubIFactoryQueueElement.BotFactory#Factories#IFactoryQueueElement#Name">
+            <summary>Définit le stub de IFactoryQueueElement.get_Name()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubIFactoryQueueElement.NameGet">
+            <summary>Définit le stub de IFactoryQueueElement.get_Name()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubIFactoryQueueElement.NameSetString">
+            <summary>Définit le stub de IFactoryQueueElement.set_Name(String value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubIFactoryQueueElement.BotFactory#Factories#IFactoryQueueElement#ParkingPos">
+            <summary>Définit le stub de IFactoryQueueElement.get_ParkingPos()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubIFactoryQueueElement.ParkingPosGet">
+            <summary>Définit le stub de IFactoryQueueElement.get_ParkingPos()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubIFactoryQueueElement.ParkingPosSetCoordinates">
+            <summary>Définit le stub de IFactoryQueueElement.set_ParkingPos(Coordinates value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubIFactoryQueueElement.BotFactory#Factories#IFactoryQueueElement#WorkingPos">
+            <summary>Définit le stub de IFactoryQueueElement.get_WorkingPos()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubIFactoryQueueElement.WorkingPosGet">
+            <summary>Définit le stub de IFactoryQueueElement.get_WorkingPos()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubIFactoryQueueElement.WorkingPosSetCoordinates">
+            <summary>Définit le stub de IFactoryQueueElement.set_WorkingPos(Coordinates value)</summary>
+        </member>
+        <member name="T:BotFactory.Factories.Fakes.StubITestingUnit">
+            <summary>Type stub de BotFactory.Factories.ITestingUnit</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubITestingUnit.#ctor">
+            <summary>Initialise une nouvelle instance de type StubITestingUnit</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubITestingUnit.AttachBackingFieldToBuildTime">
+            <summary>Attache les délégués pour émuler StubITestingUnit.BuildTime en tant que propriété avec un champ de stockage.</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubITestingUnit.AttachBackingFieldToCurrentPos">
+            <summary>Attache les délégués pour émuler StubITestingUnit.CurrentPos en tant que propriété avec un champ de stockage.</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubITestingUnit.AttachBackingFieldToIsWorking">
+            <summary>Attache les délégués pour émuler StubITestingUnit.IsWorking en tant que propriété avec un champ de stockage.</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubITestingUnit.AttachBackingFieldToNewStatus">
+            <summary>Attache les délégués pour émuler StubITestingUnit.NewStatus en tant que propriété avec un champ de stockage.</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubITestingUnit.AttachBackingFieldToParkingPos">
+            <summary>Attache les délégués pour émuler StubITestingUnit.ParkingPos en tant que propriété avec un champ de stockage.</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubITestingUnit.AttachBackingFieldToSpeed">
+            <summary>Attache les délégués pour émuler StubITestingUnit.Speed en tant que propriété avec un champ de stockage.</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubITestingUnit.AttachBackingFieldToWorkingPos">
+            <summary>Attache les délégués pour émuler StubITestingUnit.WorkingPos en tant que propriété avec un champ de stockage.</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubITestingUnit.BotFactory#Factories#ITestingUnit#MoveAsync(BotFactory.Common.Tools.Coordinates,BotFactory.Common.Tools.Coordinates)">
+            <summary>Définit le stub de ITestingUnit.MoveAsync(Coordinates currentPos, Coordinates targetPos)</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubITestingUnit.BotFactory#Factories#ITestingUnit#OnStatusChanged(BotFactory.Factories.StatusChangedEventArgs)">
+            <summary>Définit le stub de ITestingUnit.OnStatusChanged(StatusChangedEventArgs e)</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubITestingUnit.BotFactory#Factories#ITestingUnit#WorkBegins">
+            <summary>Définit le stub de ITestingUnit.WorkBegins()</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubITestingUnit.BotFactory#Factories#ITestingUnit#WorkEnds">
+            <summary>Définit le stub de ITestingUnit.WorkEnds()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubITestingUnit.BotFactory#Factories#ITestingUnit#BuildTime">
+            <summary>Définit le stub de ITestingUnit.get_BuildTime()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubITestingUnit.BuildTimeGet">
+            <summary>Définit le stub de ITestingUnit.get_BuildTime()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubITestingUnit.BuildTimeSetDouble">
+            <summary>Définit le stub de ITestingUnit.set_BuildTime(Double value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubITestingUnit.BotFactory#Factories#ITestingUnit#CurrentPos">
+            <summary>Définit le stub de ITestingUnit.get_CurrentPos()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubITestingUnit.CurrentPosGet">
+            <summary>Définit le stub de ITestingUnit.get_CurrentPos()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubITestingUnit.CurrentPosSetCoordinates">
+            <summary>Définit le stub de ITestingUnit.set_CurrentPos(Coordinates value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubITestingUnit.BotFactory#Factories#ITestingUnit#IsWorking">
+            <summary>Définit le stub de ITestingUnit.get_IsWorking()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubITestingUnit.IsWorkingGet">
+            <summary>Définit le stub de ITestingUnit.get_IsWorking()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubITestingUnit.IsWorkingSetBoolean">
+            <summary>Définit le stub de ITestingUnit.set_IsWorking(Boolean value)</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubITestingUnit.MoveAsyncCoordinatesCoordinates">
+            <summary>Définit le stub de ITestingUnit.MoveAsync(Coordinates currentPos, Coordinates targetPos)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubITestingUnit.BotFactory#Factories#ITestingUnit#Name">
+            <summary>Définit le stub de ITestingUnit.set_Name(String value)</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubITestingUnit.NameSetString">
+            <summary>Définit le stub de ITestingUnit.set_Name(String value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubITestingUnit.BotFactory#Factories#ITestingUnit#NewStatus">
+            <summary>Définit le stub de ITestingUnit.get_NewStatus()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubITestingUnit.NewStatusGet">
+            <summary>Définit le stub de ITestingUnit.get_NewStatus()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubITestingUnit.NewStatusSetString">
+            <summary>Définit le stub de ITestingUnit.set_NewStatus(String value)</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubITestingUnit.OnStatusChangedStatusChangedEventArgs">
+            <summary>Définit le stub de ITestingUnit.OnStatusChanged(StatusChangedEventArgs e)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubITestingUnit.BotFactory#Factories#ITestingUnit#ParkingPos">
+            <summary>Définit le stub de ITestingUnit.get_ParkingPos()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubITestingUnit.ParkingPosGet">
+            <summary>Définit le stub de ITestingUnit.get_ParkingPos()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubITestingUnit.ParkingPosSetCoordinates">
+            <summary>Définit le stub de ITestingUnit.set_ParkingPos(Coordinates value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubITestingUnit.BotFactory#Factories#ITestingUnit#Speed">
+            <summary>Définit le stub de ITestingUnit.get_Speed()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubITestingUnit.SpeedGet">
+            <summary>Définit le stub de ITestingUnit.get_Speed()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubITestingUnit.SpeedSetDouble">
+            <summary>Définit le stub de ITestingUnit.set_Speed(Double value)</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubITestingUnit.WorkBegins">
+            <summary>Définit le stub de ITestingUnit.WorkBegins()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubITestingUnit.WorkEnds">
+            <summary>Définit le stub de ITestingUnit.WorkEnds()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubITestingUnit.BotFactory#Factories#ITestingUnit#WorkingPos">
+            <summary>Définit le stub de ITestingUnit.get_WorkingPos()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubITestingUnit.WorkingPosGet">
+            <summary>Définit le stub de ITestingUnit.get_WorkingPos()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubITestingUnit.WorkingPosSetCoordinates">
+            <summary>Définit le stub de ITestingUnit.set_WorkingPos(Coordinates value)</summary>
+        </member>
+        <member name="T:BotFactory.Factories.Fakes.StubIUnitFactory">
+            <summary>Type stub de BotFactory.Factories.IUnitFactory</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubIUnitFactory.#ctor">
+            <summary>Initialise une nouvelle instance de type StubIUnitFactory</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubIUnitFactory.AddWorkableUnitToQueueTypeStringCoordinatesCoordinates">
+            <summary>Définit le stub de IUnitFactory.AddWorkableUnitToQueue(Type model, String name, Coordinates parkingPos, Coordinates workingPos)</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubIUnitFactory.AttachBackingFieldToQueueTime">
+            <summary>Attache les délégués pour émuler StubIUnitFactory.QueueTime en tant que propriété avec un champ de stockage.</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubIUnitFactory.BotFactory#Factories#IUnitFactory#AddWorkableUnitToQueue(System.Type,System.String,BotFactory.Common.Tools.Coordinates,BotFactory.Common.Tools.Coordinates)">
+            <summary>Définit le stub de IUnitFactory.AddWorkableUnitToQueue(Type model, String name, Coordinates parkingPos, Coordinates workingPos)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubIUnitFactory.BotFactory#Factories#IUnitFactory#Queue">
+            <summary>Définit le stub de IUnitFactory.get_Queue()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubIUnitFactory.BotFactory#Factories#IUnitFactory#QueueCapacity">
+            <summary>Définit le stub de IUnitFactory.get_QueueCapacity()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubIUnitFactory.QueueCapacityGet">
+            <summary>Définit le stub de IUnitFactory.get_QueueCapacity()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubIUnitFactory.BotFactory#Factories#IUnitFactory#QueueFreeSlots">
+            <summary>Définit le stub de IUnitFactory.get_QueueFreeSlots()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubIUnitFactory.QueueFreeSlotsGet">
+            <summary>Définit le stub de IUnitFactory.get_QueueFreeSlots()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubIUnitFactory.QueueGet">
+            <summary>Définit le stub de IUnitFactory.get_Queue()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubIUnitFactory.BotFactory#Factories#IUnitFactory#QueueTime">
+            <summary>Définit le stub de IUnitFactory.get_QueueTime()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubIUnitFactory.QueueTimeGet">
+            <summary>Définit le stub de IUnitFactory.get_QueueTime()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubIUnitFactory.QueueTimeSetTimeSpan">
+            <summary>Définit le stub de IUnitFactory.set_QueueTime(TimeSpan value)</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubIUnitFactory.BotFactory#Factories#IUnitFactory#Storage">
+            <summary>Définit le stub de IUnitFactory.get_Storage()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubIUnitFactory.BotFactory#Factories#IUnitFactory#StorageCapacity">
+            <summary>Définit le stub de IUnitFactory.get_StorageCapacity()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubIUnitFactory.StorageCapacityGet">
+            <summary>Définit le stub de IUnitFactory.get_StorageCapacity()</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubIUnitFactory.BotFactory#Factories#IUnitFactory#StorageFreeSlots">
+            <summary>Définit le stub de IUnitFactory.get_StorageFreeSlots()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubIUnitFactory.StorageFreeSlotsGet">
+            <summary>Définit le stub de IUnitFactory.get_StorageFreeSlots()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubIUnitFactory.StorageGet">
+            <summary>Définit le stub de IUnitFactory.get_Storage()</summary>
+        </member>
+        <member name="T:BotFactory.Factories.Fakes.StubReportingFactory">
+            <summary>Type stub de BotFactory.Factories.ReportingFactory</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubReportingFactory.#ctor">
+            <summary>Initialise une nouvelle instance</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubReportingFactory.CallBase">
+            <summary>Obtient ou définit une valeur qui indique si la méthode de base doit être appelée à la place du comportement de secours</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubReportingFactory.InitializeStub">
+            <summary>Initialise une nouvelle instance de type StubReportingFactory</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubReportingFactory.InstanceBehavior">
+            <summary>Obtient ou définit le comportement de l&apos;instance.</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubReportingFactory.InstanceObserver">
+            <summary>Obtient ou définit l&apos;observateur d&apos;instance.</summary>
+        </member>
+        <member name="T:BotFactory.Factories.Fakes.StubStatusChangedEventArgs">
+            <summary>Type stub de BotFactory.Factories.StatusChangedEventArgs</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubStatusChangedEventArgs.#ctor">
+            <summary>Initialise une nouvelle instance</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubStatusChangedEventArgs.CallBase">
+            <summary>Obtient ou définit une valeur qui indique si la méthode de base doit être appelée à la place du comportement de secours</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubStatusChangedEventArgs.InitializeStub">
+            <summary>Initialise une nouvelle instance de type StubStatusChangedEventArgs</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubStatusChangedEventArgs.InstanceBehavior">
+            <summary>Obtient ou définit le comportement de l&apos;instance.</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubStatusChangedEventArgs.InstanceObserver">
+            <summary>Obtient ou définit l&apos;observateur d&apos;instance.</summary>
+        </member>
+        <member name="T:BotFactory.Factories.Fakes.StubTestingUnit">
+            <summary>Type stub de BotFactory.Factories.TestingUnit</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubTestingUnit.#ctor">
+            <summary>Initialise une nouvelle instance</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubTestingUnit.CallBase">
+            <summary>Obtient ou définit une valeur qui indique si la méthode de base doit être appelée à la place du comportement de secours</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubTestingUnit.InitializeStub">
+            <summary>Initialise une nouvelle instance de type StubTestingUnit</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubTestingUnit.InstanceBehavior">
+            <summary>Obtient ou définit le comportement de l&apos;instance.</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubTestingUnit.InstanceObserver">
+            <summary>Obtient ou définit l&apos;observateur d&apos;instance.</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubTestingUnit.WorkBegins">
+            <summary>Définit le stub de TestingUnit.WorkBegins()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubTestingUnit.WorkBegins01">
+            <summary>Définit le stub de TestingUnit.WorkBegins()</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubTestingUnit.WorkEnds">
+            <summary>Définit le stub de TestingUnit.WorkEnds()</summary>
+        </member>
+        <member name="F:BotFactory.Factories.Fakes.StubTestingUnit.WorkEnds01">
+            <summary>Définit le stub de TestingUnit.WorkEnds()</summary>
+        </member>
+        <member name="T:BotFactory.Factories.Fakes.StubUnitFactory">
+            <summary>Type stub de BotFactory.Factories.UnitFactory</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubUnitFactory.#ctor(System.Int32,System.Int32)">
+            <summary>Initialise une nouvelle instance</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubUnitFactory.CallBase">
+            <summary>Obtient ou définit une valeur qui indique si la méthode de base doit être appelée à la place du comportement de secours</summary>
+        </member>
+        <member name="M:BotFactory.Factories.Fakes.StubUnitFactory.InitializeStub">
+            <summary>Initialise une nouvelle instance de type StubUnitFactory</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubUnitFactory.InstanceBehavior">
+            <summary>Obtient ou définit le comportement de l&apos;instance.</summary>
+        </member>
+        <member name="P:BotFactory.Factories.Fakes.StubUnitFactory.InstanceObserver">
+            <summary>Obtient ou définit l&apos;observateur d&apos;instance.</summary>
+        </member>
+    </members>
+</doc>

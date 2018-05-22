@@ -1,0 +1,10 @@
+C:\Projets\LHA\BotFactory\Common\bin\Debug\BotFactory.Common.dll
+C:\Projets\LHA\BotFactory\Common\bin\Debug\BotFactory.Common.pdb
+C:\Projets\LHA\BotFactory\Common\obj\Debug\BotFactory.Common.csprojResolveAssemblyReference.cache
+C:\Projets\LHA\BotFactory\Common\obj\Debug\BotFactory.Common.dll
+C:\Projets\LHA\BotFactory\Common\obj\Debug\BotFactory.Common.pdb
+C:\Projets\LHA\BotFactory\BotFactory.Common\obj\Debug\BotFactory.Common.dll
+C:\Projets\LHA\BotFactory\BotFactory.Common\obj\Debug\BotFactory.Common.pdb
+C:\Projets\LHA\BotFactory\BotFactory.Common\bin\Debug\BotFactory.Common.dll
+C:\Projets\LHA\BotFactory\BotFactory.Common\bin\Debug\BotFactory.Common.pdb
+C:\Projets\LHA\BotFactory\BotFactory.Common\obj\Debug\BotFactory.Common.csprojResolveAssemblyReference.cache
