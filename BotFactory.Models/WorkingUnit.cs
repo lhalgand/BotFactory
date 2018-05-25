@@ -10,7 +10,7 @@ using BotFactory.Common.Interface;
 
 namespace BotFactory.Models
 {
-    public abstract class WorkingUnit : BaseUnit, IWorkingUnit
+    public abstract partial class WorkingUnit : BaseUnit, IWorkingUnit
     {
         public Coordinates ParkingPos { get; set; }
         
