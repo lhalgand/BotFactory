@@ -8,12 +8,12 @@ using BotFactory.Common.Tools;
 
 namespace BotFactory.Factories
 {
-    public class FactoryQueueElement
+    public class FactoryQueueElement : IFactoryQueueElement
     {
-        public string Name;
-        public Type Model;
-        public Coordinates ParkingPos;
-        public Coordinates WorkingPos;
+        public string Name { get; private set; }
+        public Type Model { get; private set; }
+        public Coordinates ParkingPos { get; private set; }
+        public Coordinates WorkingPos { get; private set; }
 
         public FactoryQueueElement(string name, Type model, Coordinates parkingPos, Coordinates workingPos)
         {

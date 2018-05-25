@@ -44,6 +44,7 @@
     <Compile Include="Interface\IBuildableUnit.cs" />
     <Compile Include="Interface\ICoordinates.cs" />
     <Compile Include="Interface\IReportingUnit.cs" />
+    <Compile Include="Interface\IStatusChangedEventArgs.cs" />
     <Compile Include="Interface\ITestingUnit.cs" />
     <Compile Include="Interface\IVector.cs" />
     <Compile Include="Interface\IWorkingUnit.cs" />

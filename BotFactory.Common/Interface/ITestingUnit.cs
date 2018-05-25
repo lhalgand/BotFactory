@@ -8,11 +8,8 @@ using BotFactory.Common.Tools;
 
 namespace BotFactory.Common.Interface
 {
-    public interface ITestingUnit
+    public interface ITestingUnit : IWorkingUnit
     {
-        string Name { get; set; }
-        Type Model { get; set; }
-        Coordinates ParkingPos { get; set; }
-        Coordinates WorkingPos { get; set; }
+        //Type Model { get; }
     }
 }

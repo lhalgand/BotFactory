@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BotFactory.Common.Interface
 {
-    public interface IReportingUnit
+    public interface IReportingUnit : IBuildableUnit
     {
         event EventHandler<StatusChangedEventArgs> UnitStatusChanged;
 

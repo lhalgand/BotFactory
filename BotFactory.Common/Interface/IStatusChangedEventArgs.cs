@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace BotFactory.Common.Interface
 {
-    public interface IBuildableUnit
+    public interface IStatusChangedEventArgs
     {
-        Type Model { get; set; }
-
-        double BuildTime { get; set; }
+        string NewStatus { get; set; }
     }
 }

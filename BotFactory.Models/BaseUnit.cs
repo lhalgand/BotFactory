@@ -11,33 +11,13 @@ namespace BotFactory.Models
 {
     public abstract class BaseUnit : ReportingUnit, IBaseUnit
     {
-        private string name;
-        public string Name
-        {
-            get { return this.name; }
-            set { this.name = value; }
-        }
-
-        private double speed;
-        public double Speed
-        {
-            get { return this.speed; }
-            set { this.speed = value; }
-        }
-
-        private Coordinates currentPos;
-        public Coordinates CurrentPos
-        {
-            get { return this.currentPos; }
-            set { this.currentPos = value; }
-        }
-
-        private Vector vector;
-        public Vector Vector
-        {
-            get { return this.vector; }
-            set { this.vector = value; }
-        }
+        public string Name { get; private set; }
+        
+        public double Speed { get; private set; }
+        
+        public Coordinates CurrentPos { get; private set; }
+        
+        public Vector Vector { get; private set; }
 
         public BaseUnit(string name, double speed = 1)
         {

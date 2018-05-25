@@ -8,15 +8,15 @@ using BotFactory.Common.Tools;
 
 namespace BotFactory.Common.Interface
 {
-    public interface IBaseUnit
+    public interface IBaseUnit : IReportingUnit
     {
-        string Name { get; set; }
+        string Name { get; }
 
-        double Speed { get; set; }
+        double Speed { get; }
 
-        Coordinates CurrentPos { get; set; }
+        Coordinates CurrentPos { get; }
 
-        Vector Vector { get; set; }
+        Vector Vector { get; }
 
         double Move(Coordinates wishPos);
     }

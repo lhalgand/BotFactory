@@ -46,6 +46,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="R2D2.cs" />
     <Compile Include="ReportingUnit.cs" />
+    <Compile Include="TestingUnit.cs" />
     <Compile Include="T_800.cs" />
     <Compile Include="Wall_E.cs" />
     <Compile Include="WorkingUnit.cs" />

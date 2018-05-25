@@ -10,19 +10,9 @@ namespace BotFactory.Common.Tools
 {
     public class Vector : IVector
     {
-        private double x;
-        public double X
-        {
-            get { return this.x; }
-            set { this.x = value; }
-        }
+        public double X { get; set; }
 
-        private double y;
-        public double Y
-        {
-            get { return this.y; }
-            set { this.y = value; }
-        }
+        public double Y { get; set; }
 
         protected static Vector FromCoordinates(Coordinates begin, Coordinates end)
         {

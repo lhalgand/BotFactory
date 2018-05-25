@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using BotFactory.Common.Interface;
+
 namespace BotFactory.Common
 {
-    public class StatusChangedEventArgs : EventArgs
+    public class StatusChangedEventArgs : EventArgs, IStatusChangedEventArgs
     {
         private string newStatus;
         public string NewStatus

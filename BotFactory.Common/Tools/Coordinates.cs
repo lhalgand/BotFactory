@@ -10,19 +10,9 @@ namespace BotFactory.Common.Tools
 {
     public class Coordinates : ICoordinates
     {
-        private double x;
-        public double X
-        {
-            get { return this.x; }
-            set { this.x = value; }
-        }
-
-        private double y;
-        public double Y
-        {
-            get { return this.y; }
-            set { this.y = value; }
-        }
+        public double X { get; set; }
+        
+        public double Y { get; set; }
 
         public Coordinates(double x, double y)
         {

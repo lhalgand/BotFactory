@@ -25,22 +25,22 @@ namespace BotFactory.Pages
             _unitDataContext.IBot = unit;
         }
         
-        private async void ButtonWork_Click(object sender, RoutedEventArgs e)
+        private /*async*/ void ButtonWork_Click(object sender, RoutedEventArgs e)
         {
             if (_unitDataContext.IBot != null)
             {
-                var response = await _unitDataContext.IBot.WorkBegins();
+                var response = /*await*/ _unitDataContext.IBot.WorkBegins();
                 _unitDataContext.Response = response;
                 _unitDataContext.Working = _unitDataContext.IBot.IsWorking;
                 _unitDataContext.CurrentPos = _unitDataContext.IBot.CurrentPos;
             }
         }
 
-        private async void ButtonStop_Click(object sender, RoutedEventArgs e)
+        private /*async*/ void ButtonStop_Click(object sender, RoutedEventArgs e)
         {
             if (_unitDataContext.IBot != null)
             {
-                var response = await _unitDataContext.IBot.WorkEnds();
+                var response = /*await*/ _unitDataContext.IBot.WorkEnds();
                 _unitDataContext.Response = response;
                 _unitDataContext.Working = _unitDataContext.IBot.IsWorking;
                 _unitDataContext.CurrentPos = _unitDataContext.IBot.CurrentPos;

@@ -11,28 +11,41 @@ using BotFactory.Models;
 
 namespace BotFactory.Factories
 {
-    public class UnitFactory
+    public class UnitFactory : IUnitFactory
     {
-        public int QueueSize;                           // Taille de la queue
-        public int StorageSize;                         // Taille de l’entrepôt
+        // Taille de la queue
+        public int QueueCapacity { get; private set; }
 
-        public int QueueCapacity;                       // Nombre de robots dans la queue
-        public int StorageCapacity;                     // Nombre de robots construits
+        // Taille de l’entrepôt
+        public int StorageCapacity { get; private set; }
 
-        public List<FactoryQueueElement> Queue;
-        //public List<ITestingUnit> Storage;
-        public List<IWorkingUnit> Storage;
-        
-        private BackgroundWorker backgroundWorker;      // Thread de construction des robots
+        // Emplacements disponibles dans la queue
+        public int QueueFreeSlots { get; private set; }
 
-        public UnitFactory(int queueSize, int storageSize)
+        // Emplacements disponibles dans l'entrepôt
+        public int StorageFreeSlots { get; private set; }
+
+        public TimeSpan QueueTime { get; private set; }
+
+        public List<IFactoryQueueElement> Queue { get; private set; }
+
+        public List<ITestingUnit> Storage { get; private set; }
+
+        // Thread de construction des robots
+        private BackgroundWorker backgroundWorker;
+
+        public event EventHandler FactoryProgress;
+
+        public UnitFactory(int queueCapacity, int storageCapacity)
         {
-            this.QueueSize = queueSize;
-            this.StorageSize = storageSize;
+            this.QueueCapacity = queueCapacity;
+            this.QueueFreeSlots = queueCapacity;
 
-            this.Queue = new List<FactoryQueueElement>();
-            //this.Storage = new List<ITestingUnit>();
-            this.Storage = new List<IWorkingUnit>();
+            this.StorageCapacity = storageCapacity;
+            this.StorageFreeSlots = storageCapacity;
+
+            this.Queue = new List<IFactoryQueueElement>();
+            this.Storage = new List<ITestingUnit>();
 
             backgroundWorker = new BackgroundWorker();
             backgroundWorker.WorkerReportsProgress = false;
@@ -52,18 +65,19 @@ namespace BotFactory.Factories
         ///     - [ ] La construction d’un robot doit être simulée et prendre le temps indiqué par la propriété BuildTime du robot
         /// </summary>
         /// <returns>Retourne un indicateur permettant de savoir si la commande à été ajoutée</returns>
-        public bool AddWorkableUnitToQueue(string name, Type model, Coordinates parkingPos, Coordinates workingPos)
+        public bool AddWorkableUnitToQueue(Type model, string name, Coordinates parkingPos, Coordinates workingPos)
         {
-            if (this.QueueCapacity < this.QueueSize &&
-                this.StorageCapacity < this.StorageSize)
+            if (this.QueueFreeSlots > 0 && this.QueueFreeSlots <= this.QueueCapacity &&
+                this.StorageFreeSlots > 0 && this.StorageFreeSlots <= this.StorageCapacity)
             {
                 // Création d'un nouveau robot à créer dans la queue
                 FactoryQueueElement queueElement = new FactoryQueueElement(name, model, parkingPos, workingPos);
                 this.Queue.Add(queueElement);
-                this.QueueCapacity -= 1;
+                this.QueueFreeSlots -= 1;
+                this.StorageFreeSlots -= 1;
 
                 // Usine pas occupée ==> lancement de la phase de fabrication de robot
-                if (backgroundWorker.IsBusy != true)
+                if (!backgroundWorker.IsBusy)
                 { this.backgroundWorker.RunWorkerAsync(this.Queue.First()); }
             }
 
@@ -76,22 +90,38 @@ namespace BotFactory.Factories
         private void backgroundWorker_DoWork(object sender, DoWorkEventArgs e)
         {
             object obj = e.Argument;
-            if (obj is FactoryQueueElement)
-            {
-                FactoryQueueElement queueElement = obj as FactoryQueueElement;
-                if (queueElement != null)
-                {
-                    // Suppresssion du robot de la queue
-                    this.Queue.Remove(queueElement);
-                    this.QueueCapacity += 1;
+            if (!(obj is IFactoryQueueElement))
+            { return; }
 
-                    IWorkingUnit workingUnit = (IWorkingUnit)Activator.CreateInstance(queueElement.Model);
-                    workingUnit.ParkingPos = queueElement.ParkingPos;
-                    workingUnit.WorkingPos = queueElement.WorkingPos;
-                    workingUnit.WorkBegins();
-                    e.Result = workingUnit;
-                }
-            }
+            FactoryQueueElement queueElement = obj as FactoryQueueElement;
+
+            // Usine signale que la construction d'un nouveau robot commmence
+            if (this.FactoryProgress != null)
+            { this.FactoryProgress(this, new EventArgs()); }
+
+            // Suppresssion du robot de la queue
+            this.Queue.Remove(queueElement);
+            this.QueueFreeSlots += 1;
+
+            IWorkingUnit workingUnit = null;
+
+            if (queueElement.Model == typeof(R2D2))
+            { workingUnit = (IWorkingUnit)Activator.CreateInstance(typeof(R2D2), queueElement.Name, 0); }
+
+            if (queueElement.Model == typeof(HAL))
+            { workingUnit = (IWorkingUnit)Activator.CreateInstance(typeof(HAL), queueElement.Name, 0); }
+
+            if (queueElement.Model == typeof(T_800))
+            { workingUnit = (IWorkingUnit)Activator.CreateInstance(typeof(T_800), queueElement.Name, 0); }
+
+            if (queueElement.Model == typeof(Wall_E))
+            { workingUnit = (IWorkingUnit)Activator.CreateInstance(typeof(Wall_E), queueElement.Name, 0); }
+
+            workingUnit.Model = queueElement.Model;
+            workingUnit.ParkingPos = queueElement.ParkingPos;
+            workingUnit.WorkingPos = queueElement.WorkingPos;
+            workingUnit.WorkBegins();
+            e.Result = workingUnit;
         }
 
         /// <summary>
@@ -102,11 +132,18 @@ namespace BotFactory.Factories
             IWorkingUnit workingUnit = e.Result as IWorkingUnit;
             if (workingUnit != null)
             {
-                workingUnit.WorkEnds();
-                this.Storage.Add(workingUnit);
+                // Usine signale que la construction d'un robot s'achève
+                if (this.FactoryProgress != null)
+                { this.FactoryProgress(this, new EventArgs()); }
 
-                // Usine pas occupée ==> lancement de la phase de fabrication de robot
-                if (this.QueueCapacity > 0)
+                workingUnit.WorkEnds();
+                //this.Storage.Add(workingUnit);
+
+                TimeSpan ts = TimeSpan.FromMilliseconds(workingUnit.BuildTime);
+                this.QueueTime = this.QueueTime.Add(ts);
+
+                // Usine pas occupée ==> lancement de la phase de fabrication du robot suivant
+                if (this.QueueFreeSlots > 0 && this.QueueFreeSlots < this.QueueCapacity)
                 { this.backgroundWorker.RunWorkerAsync(this.Queue.First()); }
             }
         }

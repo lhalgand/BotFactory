@@ -10,12 +10,9 @@ namespace BotFactory.Models
 {
     public abstract class BuildableUnit : IBuildableUnit
     {
-        private double buildTime;
-        public double BuildTime
-        {
-            get { return this.buildTime; }
-            set { this.buildTime = value; }
-        }
+        public double BuildTime { get; set; }
+
+        public Type Model { get; set; }
 
         public BuildableUnit(double buildTime = 5000)
         {

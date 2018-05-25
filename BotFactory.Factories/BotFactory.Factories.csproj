@@ -41,6 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FactoryQueueElement.cs" />
+    <Compile Include="IFactoryQueueElement.cs" />
+    <Compile Include="IUnitFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnitFactory.cs" />
   </ItemGroup>
